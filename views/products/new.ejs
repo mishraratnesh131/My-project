@@ -1,0 +1,30 @@
+    <%-include('../partials/header.ejs')%>
+    <%-include('../partials/navbar.ejs')%>
+
+
+    <h1>"New form"</h1>
+
+    <form action="/products" method="POST">
+        <div>
+            <label for="naam">Name</label>
+            <input type="text" name="name" id="naam">
+        </div>
+
+        <div>
+            <label for="pic">Image</label>
+            <input type="text" name="img" id="pic">
+        </div>
+
+        <div>
+            <label for="daam">Price</label>
+            <input type="text" name="price" id="daam">
+        </div>
+
+        <div>
+            <label for="des">Description</label>
+           <textarea name="desc" id="des" rows="3"></textarea>
+        </div>
+        <button>Add product</button>
+    </form>
+       
+    <%-include('../partials/footer.ejs')%>
